@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+@font-face {
+    font-family: 'OSB'; /* bold */
+    src: url(fonts/OSB.ttf);
+    font-family: 'OSI'; /* italic */
+    src: url(fonts/OSB.ttf);
+    font-family: 'OSR'; /* regular */
+    src: url(fonts/OSB.ttf);
+  }
+body{
+  font-family: 'OSR';
+}
+a{
+  text-decoration: none;
+}
+
+header{
+  height: 100%;
+  background-color:#000;
+  color:#fff;
+  display:flex;
+}
+.header__logo {
+  font-family: 'OSR';
+  font-size:24px;
+  margin-top:55px;
+  margin-left:12%;
+  text-transform: uppercase;
+}
+
+nav{
+  margin-top:59px;
+  margin-left:29%;
+}
+.topnav{
+  font-family: 'OSR';
+  text-transform: uppercase;
+  font-size:14px;
+  width: 100%;
+}
+
+.topnav a{
+    color:#fff;
+    padding:0px 8px 12px 8px;
+    margin:0px 8px 0px 8px;
+}
+.topnav a:hover{
+  border-bottom: 3px solid #fcac45;
+}
+ .icon {
+  display:none;
+}
+@media screen and (max-width:1310px){
+  nav{
+    margin-left:20%;
+  }
+}
+@media screen and (max-width:1143px)
+{
+  .topnav a{
+    display:none;
+  }
+  .topnav a.icon{
+    float: right;
+    margin-top:-7px;
+    display: block;
+    color:#fff;
+    font-size:25px;
+  }
+  nav{
+    width: 100%;
+  }
+}
+
+.topnav.responsive{
+  position:relative;
+  top:50px;
+  left:-200px;
+}
+.header .topnav.responsive{
+  height: 340px;
+}
+.topnav.responsive a.icon{
+  position: absolute;
+  top: 50px;
+  right:-200px;
+}
+.topnav.responsive a{
+  float:none;
+  display: block;
+  text-align: left;
+}
