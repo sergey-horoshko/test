@@ -1,0 +1,43 @@
+.dropzone__box {
+  border: 1px solid rgb(100 116 139) !important;
+  border-radius: 6px !important;
+
+  &.invalid {
+    border: 1px solid rgb(248 113 113) !important;
+  }
+}
+
+.dark {
+  .dropzone__box {
+    border: 1px solid #fff !important;
+    border-radius: 6px !important;
+
+    &.invalid {
+      border: 1px solid rgb(248 113 113) !important;
+    }
+  }
+}
+
+.dropzone__item:not(.dropzone-processing) .dropzone__progress {
+  display: none !important;
+}
+
+.dropzone__message {
+  margin: 0 auto !important;
+}
+
+@media screen and (width <= 1280px) {
+  .form-dropzone {
+    .content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (width <= 500px) {
+  .form-dropzone {
+    .content {
+      font-size: 14px !important;
+    }
+  }
+}

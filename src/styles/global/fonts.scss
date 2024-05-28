@@ -1,0 +1,7 @@
+@import '../mixins/fonts';
+@include font('Inter', 'Inter-Regular', 400);
+@include font('Inter', 'Inter-Medium', 500);
+@include font('Inter', 'Inter-SemiBold', 600);
+@include font('Inter', 'Inter-Bold', 700);
+@include font('Inter', 'Inter-ExtraBold', 800);
+@include font('Inter', 'Inter-Black', 900);

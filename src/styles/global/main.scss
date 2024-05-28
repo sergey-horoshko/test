@@ -1,0 +1,49 @@
+$font: 'Inter', sans-serif;
+
+body {
+  font-size: 14px;
+  font-family: $font !important;
+  color: #000;
+  line-height: 100%;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+header {
+  z-index: 100;
+}
+
+button {
+  &.-loading {
+    & span {
+      max-width: 0 !important;
+    }
+  }
+}
+
+.invalid {
+  font-size: 12px;
+}
+
+.multiselect {
+  font-size: 12px;
+}
+
+.router-link-exact-active {
+  //color: rgb(var(--blue-400));
+  //background: rgb(var(--blue-100));
+}
+
+html.dark {
+  .router-link-exact-active {
+    color: #fff;
+    background: rgb(var(--surface-900));
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 650px;
+}

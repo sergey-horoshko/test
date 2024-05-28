@@ -1,0 +1,21 @@
+nav[data-pc-section='paginatorwrapper'] {
+  div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (width <= 650px) {
+  nav[data-pc-section='paginatorwrapper'] {
+    div:first-child {
+      display: flex;
+    }
+
+    div:nth-child(2) {
+      display: none;
+    }
+
+    div[data-pc-section='trigger'] {
+      display: flex;
+    }
+  }
+}

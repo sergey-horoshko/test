@@ -1,0 +1,83 @@
+{
+  "menu": {
+    "home": "Home",
+    "change": "Change",
+    "investments": "Investments",
+    "partners": "Partners",
+    "history": "History"
+  },
+  "form": {
+    "labelEmail": "E-mail",
+    "labelPassword": "Password",
+    "labelLanguage": "Language",
+    "labelTheme": "Theme",
+    "labelPromocode": "Promo code (if available)",
+    "buttonSignIn": "Sign in",
+    "buttonSignUp": "Sign Up",
+    "buttonReset": "Reset password",
+    "save": "Save",
+    "back": "Back",
+    "more": "More"
+  },
+  "auth": {
+    "title": "Auth",
+    "description": "Login to your Opes personal account",
+    "registration": "Registration",
+    "reset": "Forgot password ?"
+  },
+  "registration": {
+    "title": "Registration",
+    "description": "Creating a personal Opes account",
+    "auth": "Auth",
+    "reset": "Forgot password ?",
+    "rulesStart": "By registering in your personal account, you accept",
+    "rulesLink": "Rules Opes",
+    "rulesEnd": "and consent to the storage and processing of your data"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Personalize your personal account",
+    "auth": "Auth",
+    "interface": "Interface"
+  },
+  "reset": {
+    "title": "Reset password",
+    "description": "Enter your personal account email",
+    "auth": "Auth"
+  },
+  "newPassword": {
+    "title": "New password",
+    "description": "Enter your email and new password",
+    "auth": "Auth"
+  },
+  "docs": {
+    "title": "Opes Rules and Data Processing Policy",
+    "description": "Read the terms of service of LLC Opes holding",
+    "date": "Publication date: May 02, 2024",
+    "rules": "These Terms constitute a legally binding agreement between the User, the Investor and Opes. The Terms govern the use of Opes services available to the User, Investor in or through the Personal Account. The Opes Services may be provided by Opes or, if specified in these Terms, any Web Service, Mobile Application Terms or any additional terms. By registering in the Personal Account, gaining access to its functionality and/or using the Opes Services, the User, Investor agrees that he has read, understood and accepted these Terms, as well as any additional documents or conditions mentioned in these Terms. The User, Investor acknowledges and agrees that he will be bound by these Terms and will comply with them, in accordance with periodic updates and changes to the Terms, which Opes has the right not to notify in advance. If the User, Investor does not understand and accept these Terms in full, the User, Investor should not register in the Personal Account or access its functionality or any Opes Service.",
+    "termins": "Terms.",
+    "webService": "Web service is software that provides access to its functions via the Internet using open protocols and interfaces, specially designed and adapted primarily for stationary devices: laptops, personal computers.",
+    "mobApp": "Mobile application - software downloaded by the User, Investor independently from specialized mobile application stores, such as: App Store (controlled by Apple) and Google Play (controlled by Google) and other application stores, providing access to its functions via the Internet using open protocols and interfaces, specially designed and adapted primarily for use on smartphones, tablets and other portable devices.",
+    "lk": "Personal account is an information resource controlled by Opes, which is a set of screens/pages that are accessible only to the user who has registered on the site and then logged in on a special screen/page, thereby confirming his identity.",
+    "account": "User account, investor account - a set of data about the user/investor stored in the database, necessary for his identification (authentication) and providing access to his personal data and settings in the Personal Account.",
+    "user": "User is an individual who has registered and logged into the Personal Account, but has not created an investment lockup.",
+    "investor": "Investor is an individual who has registered and logged into his Personal Account and created an investment lockup.",
+    "money": "Cash - the amount of funds of the User, Investor used to carry out transactions in the Personal Account, presented as a decimal number with 2 (two) decimal places, expressed in the form of a cryptocurrency token issued by Tether Limited, intended for use as a stable digital asset, the price of which is pegged to the US dollar."
+  },
+  "notification": {
+    "title": "Notifications",
+    "description": "Important personal account events and Opes company news",
+    "readAll": "Read all",
+    "noNotifications": "No notifications",
+    "date": "Date of notification"
+  },
+  "successForm": {
+    "success": "Success",
+    "resetPassword": "A message with instructions has been sent to your email.",
+    "changePassword": "Password changed successfully"
+  },
+  "errorForm": {
+    "error": "Error",
+    "resetPassword": "This email doesn't exist"
+  }
+}
