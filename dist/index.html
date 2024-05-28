@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/test/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .loading-logo__progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: width 0.4s;
+      }
+      .loading-logo__progress > img {
+        max-width: none;
+        vertical-align: middle;
+      }
+      #spinner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100000000;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 1;
+        transition: 0.4s ease-out 0.8s;
+      }
+      #spinner.-hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .loading-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .loading-logo > img {
+        max-width: inherit;
+        height: 100%;
+        opacity: 0.2;
+        filter: grayscale(100%);
+      }
+      .duration-400 {
+        transition: 0.4s;
+      }
+    </style>
+    <title>Opes</title>
+    <script type="module" crossorigin src="/test/assets/index-CSIFBmTv.js"></script>
+    <link rel="stylesheet" crossorigin href="/test/assets/index-B1UFk9s4.css">
+  </head>
+  <body>
+    <div id="spinner">
+      <div class="loading-logo">
+        <img width="300px" src="/test/images/logo-light.svg" alt="spinner" />
+        <div id="spinnerProgress" class="loading-logo__progress">
+          <img width="300px" src="/test/images/logo-light.svg" alt="spinner" />
+        </div>
+      </div>
+    </div>
+    <div
+      id="app"
+      class="bg-white duration-200 md:bg-surface-100 dark:bg-dark dark:text-white"
+    ></div>
+    <script>
+      (() => {
+        let e = null;
+        window.addEventListener('load', () => {
+          e = 1;
+        });
+        ((n, t, i, o) => {
+          let a = null;
+          Date.now();
+          const w = (d) => {
+            a || (a = d);
+            const l = Math.min((d - a) / o, 1);
+            (n.style.width = Math.floor(l * (i - t) + t) + '%'),
+              e && (n.style.width = '100%'),
+              l < 1
+                ? window.requestAnimationFrame(w)
+                : window.cancelAnimationFrame(window.requestAnimationFrame(w));
+          };
+          window.requestAnimationFrame(w);
+        })(document.getElementById('spinnerProgress'), 0, 75, 5e3);
+      })();
+    </script>
+  </body>
+</html>
