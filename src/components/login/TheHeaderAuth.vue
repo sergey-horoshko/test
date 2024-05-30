@@ -5,8 +5,8 @@
         <img v-if="themeStore.theme === 'dark'" src="/images/logo-dark.svg" alt="Logo" />
         <img v-else src="/images/logo-light.svg" alt="Logo" />
       </router-link>
-      <button @click="goTo">
-        <i style="font-size: 1.4rem" class="pi pi-cog text-gray-500 dark:text-gray-300"></i>
+      <button @click="goTo" type="button">
+        <i style="font-size: 1.4rem" class="pi pi-cog text-gray-500 dark:text-gray-300" />
       </button>
     </div>
   </div>
@@ -24,6 +24,7 @@ export default defineComponent({
 
     // methods
     const goTo = () => {
+      console.log(123);
       router.push('/settings');
     };
 

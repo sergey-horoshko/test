@@ -21,8 +21,9 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
     'vue/no-reserved-component-names': 'off',
+    'vuejs-accessibility/label-has-for': 'off',
   },
-  ignorePatterns: ['**/*.css', '**/*.scss', 'src/preset/*'],
+  ignorePatterns: ['**/*.css', '**/*.scss', 'src/preset/*', '/public'],
   settings: {
     'import/resolver': {
       'eslint-import-resolver-custom-alias': {

@@ -2,6 +2,7 @@ import { createI18n } from 'vue-i18n';
 import * as validators from '@vuelidate/validators';
 import { useLocaleStore } from '@/stores/locale.js';
 import { storeToRefs } from 'pinia';
+
 const localeStore = useLocaleStore();
 const { locale } = storeToRefs(localeStore);
 const { createI18nMessage } = validators;

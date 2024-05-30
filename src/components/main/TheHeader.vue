@@ -8,15 +8,15 @@
 
       <div class="flex items-center justify-between gap-5">
         <router-link to="/payment">
-          <i style="font-size: 1rem" class="pi pi-wallet text-gray-500 dark:text-gray-300"></i>
+          <i style="font-size: 1rem" class="pi pi-wallet text-gray-500 dark:text-gray-300" />
         </router-link>
 
         <router-link to="/notification">
-          <i style="font-size: 1rem" class="pi pi-bell text-gray-500 dark:text-gray-300"></i>
+          <i style="font-size: 1rem" class="pi pi-bell text-gray-500 dark:text-gray-300" />
         </router-link>
 
-        <router-link to="/settings">
-          <i style="font-size: 1rem" class="pi pi-cog text-gray-500 dark:text-gray-300"></i>
+        <router-link to="/profile/settings">
+          <i style="font-size: 1rem" class="pi pi-cog text-gray-500 dark:text-gray-300" />
         </router-link>
       </div>
     </div>
@@ -24,23 +24,15 @@
 </template>
 <script>
 import { defineComponent } from 'vue';
-import { useRouter } from 'vue-router';
 import { useThemeStore } from '@/stores/theme.js';
 
 export default defineComponent({
   setup() {
     // data
     const themeStore = useThemeStore();
-    const router = useRouter();
-
-    // methods
-    const goTo = () => {
-      router.push('/settings');
-    };
 
     return {
       themeStore,
-      goTo,
     };
   },
 });

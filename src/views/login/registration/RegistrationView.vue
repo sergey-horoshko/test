@@ -57,8 +57,8 @@
           />
         </IconField>
         <button class="toggle p-2" type="button" @click="typePassword = !typePassword">
-          <i v-if="typePassword" class="pi pi-eye" style="font-size: 1.1rem"></i>
-          <i v-else class="pi pi-eye-slash" style="font-size: 1.1rem"></i>
+          <i v-if="typePassword" class="pi pi-eye" style="font-size: 1.1rem" />
+          <i v-else class="pi pi-eye-slash" style="font-size: 1.1rem" />
         </button>
         <div v-if="!!validate({ prop: 'password' })" class="invalid mt-1 text-red-400">
           {{ validate({ prop: 'password' }) }}

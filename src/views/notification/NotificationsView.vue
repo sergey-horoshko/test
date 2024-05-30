@@ -8,7 +8,7 @@
         {{ $t('notification.readAll') }}
       </div>
     </div>
-    <div class="mt-1">
+    <div class="mt-1 leading-5">
       {{ $t('notification.description') }}
     </div>
 
@@ -22,13 +22,13 @@
           v-for="item in notifications"
           :key="item.id"
           :to="`/notification/${item.id}`"
-          class="relative flex gap-3 rounded-lg bg-gray-100 p-4 pl-2"
+          class="relative flex gap-3 rounded-lg bg-gray-100 p-4 pl-2 dark:bg-dark"
         >
           <i
             style="font-size: 1.2rem"
             class="text-gray-500 dark:text-gray-300"
             :class="`pi ${item.icon}`"
-          ></i>
+          />
           <div class="flex w-full flex-col">
             <div class="font-bold">
               {{ item.title }}
@@ -48,7 +48,7 @@
           <div
             v-if="!item.read"
             class="absolute right-4 top-4 max-h-2 min-h-2 min-w-2 max-w-2 rounded-full bg-red-500"
-          ></div>
+          />
         </router-link>
       </div>
 
@@ -231,7 +231,7 @@ export default defineComponent({
     const readAll = () => {};
 
     const handleScroll = () => {
-      let element = document.body;
+      const element = document.body;
 
       if (pendingMore.value) return;
 

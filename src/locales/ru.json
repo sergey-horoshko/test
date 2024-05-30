@@ -12,12 +12,24 @@
     "labelLanguage": "Язык",
     "labelTheme": "Тема оформления",
     "labelPromocode": "Промокод (при наличии)",
+    "referralPromocode": "Реферальный промокод",
+    "referralLink": "Реферальная ссылка",
     "buttonSignIn": "Войти",
     "buttonSignUp": "Зарегистрироваться",
     "buttonReset": "Сбросить пароль",
+    "changePassword": "Изменение пароля",
+    "changePasswordDescription": "Введите текущий пароль для подтверждения изменений",
+    "currentPassword": "Текущий пароль",
+    "changeWallet": "Изменение кошелька",
     "save": "Сохранить",
     "back": "Назад",
-    "more": "Подробнее"
+    "more": "Подробнее",
+    "change": "Изменить",
+    "copy": "Копировать",
+    "cancel": "Отменить",
+    "erc20": "Ethereum ERC20 wallet",
+    "trc20": "Tether TRC20 wallet",
+    "bep20": "BEP20 wallet"
   },
   "auth": {
     "title": "Авторизация",
@@ -38,7 +50,18 @@
     "title": "Настройки",
     "description": "Персонализируйте личный кабинет",
     "auth": "Авторизация",
-    "interface": "Интерфейс"
+    "account": "Аккаунт",
+    "wallet": "Кошельки",
+    "interface": "Интерфейс",
+    "help": "Помощь",
+    "helpTab": {
+      "titleTelegram": "Чат поддержки в Телеграм",
+      "descriptionTelegram": "Время оказания помощи с 10:00 до 19:00 по Москве",
+      "titleDoc": "Пользовательская документация",
+      "descriptionDoc": "Описание функционала личного кабинета и пошаговые инструкции.",
+      "titleOffer": "Оферта OPES",
+      "descriptionOffer": "Пользовательское соглашение и описание услуг предоставляемых компанией Opes"
+    }
   },
   "reset": {
     "title": "Сброс пароля",
@@ -74,7 +97,9 @@
   "successForm": {
     "success": "Успех",
     "resetPassword": "На вашу почту отправлено сообщения с инструкцией",
-    "changePassword": "Пароль успешно изменен"
+    "changePassword": "Пароль успешно изменен",
+    "copy": "Скопировано",
+    "wallet": "Кошелек успешно изменен"
   },
   "errorForm": {
     "error": "Ошибка",

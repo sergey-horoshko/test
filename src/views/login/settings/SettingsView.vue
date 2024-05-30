@@ -12,9 +12,15 @@
       {{ $t('settings.description') }}
     </div>
 
-    {{ form.language }}
-    {{ form.theme }}
-    <form class="mt-8">
+    <div class="mt-8">
+      <div
+        class="w-fit cursor-pointer border-b-[2px] border-blue-600 pb-2 font-semibold text-blue-600 dark:border-blue-500 dark:text-blue-500"
+      >
+        {{ $t('settings.interface') }}
+      </div>
+    </div>
+
+    <form class="mt-6">
       <div class="flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.labelLanguage') }}
@@ -53,7 +59,7 @@
 </template>
 
 <script>
-import { defineComponent, reactive, ref, onMounted } from 'vue';
+import { defineComponent, reactive, onMounted } from 'vue';
 import { useLocaleStore } from '@/stores/locale.js';
 import { useThemeStore } from '@/stores/theme.js';
 import { useI18n } from 'vue-i18n';
@@ -61,7 +67,6 @@ import { i18n } from '@/utils/i18n-validators.js';
 
 export default defineComponent({
   setup() {
-    const typePassword = ref(true);
     const form = reactive({
       theme: null,
       language: null,
@@ -117,7 +122,6 @@ export default defineComponent({
 
     return {
       localeStore,
-      typePassword,
       form,
       themes,
       languages,

@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-lg p-5 md:bg-white md:p-12 md:shadow-xl dark:md:bg-dark-content">
     <button @click="goTo" class="flex items-center gap-3 text-gray-400" type="button">
-      <i class="pi pi-arrow-left"></i>
+      <i class="pi pi-arrow-left" />
       <span>
         {{ $t('form.back') }}
       </span>
@@ -15,7 +15,7 @@
       {{ $t('docs.description') }}
     </div>
     <div class="mt-5 flex gap-3">
-      <i class="pi pi-calendar"></i>
+      <i class="pi pi-calendar" />
       <span>
         {{ $t('docs.date') }}
       </span>

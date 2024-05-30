@@ -13,7 +13,7 @@
           style="font-size: 1rem"
           class="text-gray-500 dark:text-gray-300"
           :class="`pi ${item.icon}`"
-        ></i>
+        />
         <span class="text-xs">
           {{ $t(`menu.${item.text}`) }}
         </span>
@@ -72,7 +72,7 @@ export default defineComponent({
   min-width: 84px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
   .link {
     min-width: 70px;
 

@@ -1,0 +1,5 @@
+:root {
+  --bottom-sheet-max-width: 650px;
+  --bottom-sheet-max-height: 91%;
+  --bottom-sheet-min-width: 91%;
+}

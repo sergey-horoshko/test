@@ -34,6 +34,7 @@
     "@vuepic/vue-datepicker": "^8.5.1",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.7",
+    "bottom-sheet-vue3": "^2.0.5",
     "click-outside-vue3": "^4.0.1",
     "dayjs": "^1.11.10",
     "dropzone-vue": "^0.1.11",

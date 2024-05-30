@@ -2,24 +2,26 @@ import { createApp } from 'vue';
 import dayjs from 'dayjs';
 import PrimeVue from 'primevue/config';
 import ToastService from 'primevue/toastservice';
-import App from './App.vue';
-import router from './router';
-import store from './stores';
-import en from './locales/en.json';
-import ru from './locales/ru.json';
 import { storeToRefs } from 'pinia';
 import { createI18n } from 'vue-i18n';
 import 'dayjs/locale/ru';
-import Preset from './preset';
 import localePrimeVue from '@/utils/localePrimeVue';
 import vClickOutside from 'click-outside-vue3';
 import AnimatedCounter from 'vue-animated-counter';
 import DropZone from 'dropzone-vue';
 import { useLocaleStore } from '@/stores/locale.js';
+import { createBottomSheet } from 'bottom-sheet-vue3';
+import Preset from './preset';
+import ru from './locales/ru.json';
+import en from './locales/en.json';
+import store from './stores';
+import router from './router';
+import App from './App.vue';
 
 // global styles
 import '@vuepic/vue-datepicker/dist/main.css';
 import 'dropzone-vue/dist/dropzone-vue.common.css';
+import 'bottom-sheet-vue3/dist/style.css';
 import './styles/index.scss';
 
 // global components
@@ -41,6 +43,7 @@ app.use(PrimeVue, {
   pt: Preset,
 });
 app.use(ToastService);
+app.use(createBottomSheet());
 app.use(store);
 
 // locales

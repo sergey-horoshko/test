@@ -12,12 +12,24 @@
     "labelLanguage": "Language",
     "labelTheme": "Theme",
     "labelPromocode": "Promo code (if available)",
+    "referralPromocode": "Referral promo code",
+    "referralLink": "Referral link",
     "buttonSignIn": "Sign in",
     "buttonSignUp": "Sign Up",
     "buttonReset": "Reset password",
+    "changePassword": "Change password",
+    "changePasswordDescription": "Enter your real password to confirm changes",
+    "currentPassword": "Current password",
+    "changeWallet": "Change wallet",
     "save": "Save",
     "back": "Back",
-    "more": "More"
+    "more": "More",
+    "change": "Change",
+    "copy": "Copy",
+    "cancel": "Cancel",
+    "erc20": "Ethereum ERC20 wallet",
+    "trc20": "Tether TRC20 wallet",
+    "bep20": "BEP20 wallet"
   },
   "auth": {
     "title": "Auth",
@@ -38,7 +50,18 @@
     "title": "Settings",
     "description": "Personalize your personal account",
     "auth": "Auth",
-    "interface": "Interface"
+    "account": "Account",
+    "wallet": "Wallets",
+    "interface": "Interface",
+    "help": "Help",
+    "helpTab": {
+      "titleTelegram": "Telegram support chat",
+      "descriptionTelegram": "Time for assistance is from 10:00 to 19:00 Moscow time.",
+      "titleDoc": "User documentation",
+      "descriptionDoc": "Description of the functionality of your personal account and step-by-step instructions.",
+      "titleOffer": "OPES offer",
+      "descriptionOffer": "User agreement and description of services provided by Opes."
+    }
   },
   "reset": {
     "title": "Reset password",
@@ -74,7 +97,9 @@
   "successForm": {
     "success": "Success",
     "resetPassword": "A message with instructions has been sent to your email.",
-    "changePassword": "Password changed successfully"
+    "changePassword": "Password changed successfully",
+    "copy": "Copied",
+    "wallet": "Wallet success change"
   },
   "errorForm": {
     "error": "Error",
