@@ -27,6 +27,15 @@
     "change": "Change",
     "copy": "Copy",
     "cancel": "Cancel",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "walletRecipient": "Recipient's wallet",
+    "network": "Translation network",
+    "transferAmount": "Transfer Amount",
+    "confirmTransfer": "Accept transfer",
+    "freeFunds": "Free funds (available for withdrawal)",
+    "sumWithdraw": "Withdraw amount",
+    "createOrder": "Create an order",
     "erc20": "Ethereum ERC20 wallet",
     "trc20": "Tether TRC20 wallet",
     "bep20": "BEP20 wallet"
@@ -94,10 +103,27 @@
     "noNotifications": "No notifications",
     "date": "Date of notification"
   },
+  "payment": {
+    "title": "To get started, top up your balance",
+    "description": "The funds will be credited to your personal account within 1 hour",
+    "balance": "Total balance",
+    "check": "Account",
+    "investment": "Invested",
+    "freeMoney": "Free funds"
+  },
+  "deposit": {
+    "title": "Top up balance",
+    "description": "The funds will be credited to your personal account within 1 hour"
+  },
+  "withdraw": {
+    "title": "Withdrawal",
+    "description": "Withdrawal of funds to the specified wallet takes up to 5 working days"
+  },
   "successForm": {
     "success": "Success",
     "resetPassword": "A message with instructions has been sent to your email.",
     "changePassword": "Password changed successfully",
+    "transfer": "Отправлено",
     "copy": "Copied",
     "wallet": "Wallet success change"
   },

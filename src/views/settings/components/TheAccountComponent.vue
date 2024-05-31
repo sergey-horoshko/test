@@ -47,7 +47,6 @@
       <div
         @click="copy(`https://cab.opes.team/?ref=${user.promo}`)"
         class="cursor-pointer text-xs font-medium text-blue-600 dark:text-blue-500"
-        to="/reset"
       >
         {{ $t('form.copy') }}
       </div>

@@ -9,6 +9,8 @@ import history from './routes/history';
 import partners from './routes/partners.js';
 import investments from './routes/investments.js';
 import change from './routes/change.js';
+import deposit from './routes/deposit.js';
+import withdraw from './routes/withdraw.js';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +38,8 @@ const router = createRouter({
         ...partners,
         ...investments,
         ...change,
+        ...withdraw,
+        ...deposit,
       ],
       meta: {
         private: true,

@@ -4,6 +4,7 @@ import Dropdown from 'primevue/dropdown';
 import Toast from 'primevue/toast';
 import InputText from 'primevue/inputtext';
 import InputMask from 'primevue/inputmask';
+import InputNumber from 'primevue/inputnumber';
 import InputIcon from 'primevue/inputicon';
 import IconField from 'primevue/iconfield';
 import InputOtp from 'primevue/inputotp';
@@ -42,4 +43,5 @@ export default [
   Image,
   Dialog,
   Textarea,
+  InputNumber,
 ];

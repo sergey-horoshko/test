@@ -21,7 +21,7 @@ import App from './App.vue';
 // global styles
 import '@vuepic/vue-datepicker/dist/main.css';
 import 'dropzone-vue/dist/dropzone-vue.common.css';
-import 'bottom-sheet-vue3/dist/style.css';
+import 'bottom-sheet-vue3/style.css'; // eslint-disable-line
 import './styles/index.scss';
 
 // global components
