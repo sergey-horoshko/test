@@ -72,7 +72,11 @@
     </div>
   </div>
 
-  <Sheet v-model:visible="show">
+  <Sheet
+    v-model:visible="show"
+    class="bg-white md:bg-surface-100 dark:bg-dark dark:text-white"
+    :class="{ dark: themeStore.theme === 'dark' }"
+  >
     <div class="p-5 pt-4 md:p-8">
       <div @click="show = false" class="flex cursor-pointer justify-end">
         <i style="font-size: 1rem" class="pi pi-times text-gray-500 dark:text-gray-300" />
@@ -84,7 +88,7 @@
         </span>
       </div>
 
-      <div class="mt-1 leading-4">
+      <div class="mt-1 leading-5">
         {{ $t('form.changePasswordDescription') }}
       </div>
 
@@ -165,6 +169,7 @@ import { useI18n } from 'vue-i18n';
 import { Sheet } from 'bottom-sheet-vue3';
 import { minLength, required, sameAs } from '@/utils/i18n-validators.js';
 import { useVuelidate } from '@vuelidate/core';
+import { useThemeStore } from '@/stores/theme.js';
 
 export default defineComponent({
   setup() {
@@ -177,6 +182,7 @@ export default defineComponent({
     const typeCurrentPassword = ref(true);
     const show = ref(false);
     const meStore = useMeStore();
+    const themeStore = useThemeStore();
     const { user } = meStore;
     const { t } = useI18n();
 
@@ -263,11 +269,12 @@ export default defineComponent({
       user,
       typePassword,
       typeCurrentPassword,
+      v,
+      show,
+      themeStore,
       copy,
       validate,
       onSubmit,
-      v,
-      show,
     };
   },
 

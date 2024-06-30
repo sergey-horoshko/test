@@ -8,7 +8,7 @@
         {{ $t('notification.readAll') }}
       </div>
     </div>
-    <div class="mt-1 leading-5">
+    <div class="mt-2 leading-5">
       {{ $t('notification.description') }}
     </div>
 

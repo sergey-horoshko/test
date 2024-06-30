@@ -1,5 +1,5 @@
 <template>
-  <form class="mt-8">
+  <form autocomplete="off" class="mt-8">
     <div class="flex flex-col">
       <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
         {{ $t('form.labelLanguage') }}

@@ -60,10 +60,12 @@ service.interceptors.response.use(
         return Promise.reject(r);
       }
 
-      if (response?.status < 500) {
+      if (response?.status <= 500) {
+        console.log(response);
+
         const r = response?.data;
 
-        toastError();
+        toastError({ title: 'Ошибка', body: 'Произошла ошибка, свяжитесь с администратором' });
 
         return Promise.reject(new Error(r));
       }

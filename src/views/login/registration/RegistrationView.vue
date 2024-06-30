@@ -8,19 +8,28 @@
         {{ $t('registration.auth') }}
       </router-link>
     </div>
-    <div class="mt-1">
+    <div class="mt-2 leading-5">
       {{ $t('registration.description') }}
     </div>
 
-    <form @submit.prevent="onSubmit" class="mt-8">
+    <form @submit.prevent="onSubmit" autocomplete="off" class="mt-8">
       <div class="flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.labelPromocode') }}
         </label>
         <IconField iconPosition="left">
           <InputIcon class="pi pi-check-circle" />
-          <InputText v-model.trim="form.promocode" @focus="v.$reset()" type="text" size="large" />
+          <InputText
+            v-model.trim="form.promocode"
+            @focus="v.$reset()"
+            :invalid="!!validate({ prop: 'promocode' })"
+            type="text"
+            size="large"
+          />
         </IconField>
+        <div v-if="!!validate({ prop: 'promocode' })" class="invalid mt-1 text-red-400">
+          {{ validate({ prop: 'promocode' }) }}
+        </div>
       </div>
 
       <div class="mt-6 flex flex-col">
@@ -113,6 +122,10 @@ export default defineComponent({
 
     // computed
     const rules = computed(() => ({
+      promocode: {
+        required,
+        minLength: minLength(8),
+      },
       email: {
         required,
         email,

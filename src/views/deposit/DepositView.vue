@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col mt-6">
+      <div class="mt-6 flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.network') }}
         </label>
@@ -50,7 +50,7 @@
         </IconField>
       </div>
 
-      <div class="flex flex-col mt-6">
+      <div class="mt-6 flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.transferAmount') }}
         </label>

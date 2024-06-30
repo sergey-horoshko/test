@@ -1,3 +1,9 @@
 .bottom-sheet-backdrop {
   z-index: 1000;
+
+  &.dark {
+    .bottom-sheet {
+      background-color: rgb(52 52 61 / var(--tw-bg-opacity));
+    }
+  }
 }

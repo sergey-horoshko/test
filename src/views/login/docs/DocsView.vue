@@ -11,7 +11,7 @@
         {{ $t('docs.title') }}
       </span>
     </div>
-    <div class="mt-1">
+    <div class="mt-2 leading-5">
       {{ $t('docs.description') }}
     </div>
     <div class="mt-5 flex gap-3">

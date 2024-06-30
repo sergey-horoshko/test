@@ -1,11 +1,12 @@
 <template>
-  <div class="min-h-96 rounded-lg px-5 pt-0 pb-0 md:pt-0 md:pb-0">
+  <div class="min-h-96 rounded-lg px-5 pb-0 pt-0 md:pb-0 md:pt-0">
     <div
-      class="flex justify-center md:gap-16 gap-8 items-center bg-blue-600 p-5 text-white text-xs md:text-base md:px-12 md:py-8 rounded-lg w-full md:shadow-xl card">
-      <div class="flex flex-col justify-between min-h-[150px]">
-        <div class="flex flex-col gap-2 mb-6">
-          <img class="logo" src="/images/logo.svg" alt="logo">
-          <span class="font-bold text">W A L L E T</span>
+      class="card flex w-full items-center justify-center gap-8 rounded-lg bg-blue-600 p-5 text-xs text-white md:gap-16 md:px-12 md:py-8 md:text-base md:shadow-xl"
+    >
+      <div class="flex min-h-[150px] flex-col justify-between">
+        <div class="mb-6 flex flex-col gap-2">
+          <img class="logo" src="/images/logo.svg" alt="logo" />
+          <span class="text font-bold">W A L L E T</span>
         </div>
         <div class="flex flex-col">
           <span class="mb-1">
@@ -14,7 +15,7 @@
           <span class="font-bold">A-000000001</span>
         </div>
       </div>
-      <div class="flex flex-col justify-between min-h-[150px]">
+      <div class="flex min-h-[150px] flex-col justify-between">
         <div class="flex flex-col md:mt-4">
           <div class="flex items-center gap-3">
             <i class="pi pi-wallet" style="font-size: 1rem"></i>
@@ -22,31 +23,31 @@
               {{ $t('payment.balance') }}
             </span>
           </div>
-          <div class="flex items-center ml-8 gap-3">
+          <div class="ml-8 flex items-center gap-3">
             <span class="font-bold">00,00</span>
             <span class="text-xs text-gray-300">USDT</span>
           </div>
         </div>
-        <div class="flex flex-col mt-4">
+        <div class="mt-4 flex flex-col">
           <div class="flex items-center gap-3">
             <i class="pi pi-chart-bar" style="font-size: 1rem"></i>
             <span>
               {{ $t('payment.investment') }}
             </span>
           </div>
-          <div class="flex items-center ml-8 gap-3">
+          <div class="ml-8 flex items-center gap-3">
             <span class="font-bold">00,00</span>
             <span class="text-xs text-gray-300">USDT</span>
           </div>
         </div>
-        <div class="flex flex-col mt-4">
+        <div class="mt-4 flex flex-col">
           <div class="flex items-center gap-3">
             <i class="pi pi-database" style="font-size: 1rem"></i>
             <span>
               {{ $t('payment.freeMoney') }}
             </span>
           </div>
-          <div class="flex items-center ml-8 gap-3">
+          <div class="ml-8 flex items-center gap-3">
             <span class="font-bold">00,00</span>
             <span class="text-xs text-gray-300">USDT</span>
           </div>
@@ -54,11 +55,12 @@
       </div>
     </div>
 
-    <div class="mt-6 px-5 pt-0 pb-0 md:px-12 md:pt-0 md:pb-0 font-semibold">
-      <div class="flex justify-center items-center gap-4 md:gap-8">
+    <div class="mt-6 px-5 pb-0 pt-0 font-semibold md:px-12 md:pb-0 md:pt-0">
+      <div class="flex items-center justify-center gap-4 md:gap-8">
         <div
           @click="goTo('/deposit')"
-          class="button flex justify-center items-center gap-3 md:shadow-md py-2 md:py-3 px-5 bg-gray-200 cursor-pointer rounded-full text-blue-600">
+          class="button flex cursor-pointer items-center justify-center gap-3 rounded-full bg-gray-200 px-5 py-2 text-blue-600 md:py-3 md:shadow-md"
+        >
           <i class="pi pi-download" style="font-size: 1rem"></i>
           <span>
             {{ $t('form.deposit') }}
@@ -66,7 +68,8 @@
         </div>
         <div
           @click="goTo('/withdraw')"
-          class="button flex justify-center items-center gap-3 md:shadow-md py-2 md:py-3 px-5 bg-gray-200 cursor-pointer rounded-full text-blue-600">
+          class="button flex cursor-pointer items-center justify-center gap-3 rounded-full bg-gray-200 px-5 py-2 text-blue-600 md:py-3 md:shadow-md"
+        >
           <i class="pi pi-upload" style="font-size: 1rem"></i>
           <span>
             {{ $t('form.withdraw') }}
@@ -75,18 +78,20 @@
       </div>
     </div>
 
-    <div class="flex w-full items-center justify-between gap-3 mt-8">
-      <span class="text-2xl font-bold leading-7">
-        {{ $t('payment.title') }}
-      </span>
-    </div>
-    <div class="mt-1 leading-5">
-      {{ $t('payment.description') }}
-    </div>
+    <!--    <div class="flex w-full items-center justify-between gap-3 mt-8">-->
+    <!--      <span class="text-2xl font-bold leading-7">-->
+    <!--        {{ $t('payment.title') }}-->
+    <!--      </span>-->
+    <!--    </div>-->
+    <!--    <div class="mt-3 leading-5">-->
+    <!--      {{ $t('payment.description') }}-->
+    <!--    </div>-->
+
+    <Operations />
   </div>
 </template>
 <script>
-import { defineComponent } from 'vue';
+import { defineAsyncComponent, defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
 export default defineComponent({
@@ -100,9 +105,13 @@ export default defineComponent({
     };
 
     return {
-      goTo
+      goTo,
     };
-  }
+  },
+
+  components: {
+    Operations: defineAsyncComponent(() => import('./components/OperationsComponent.vue')),
+  },
 });
 </script>
 

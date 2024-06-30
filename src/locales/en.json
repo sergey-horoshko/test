@@ -21,6 +21,7 @@
     "changePasswordDescription": "Enter your real password to confirm changes",
     "currentPassword": "Current password",
     "changeWallet": "Change wallet",
+    "sort": "Sort",
     "save": "Save",
     "back": "Back",
     "more": "More",
@@ -38,7 +39,13 @@
     "createOrder": "Create an order",
     "erc20": "Ethereum ERC20 wallet",
     "trc20": "Tether TRC20 wallet",
-    "bep20": "BEP20 wallet"
+    "bep20": "BEP20 wallet",
+    "openLockup": "Open lockup",
+    "sumLockup": "Lockup amount from 5,000 (USDT)",
+    "investmentPeriod": "Investment period",
+    "payInterest": "Pay interest",
+    "confirm": "Confirm",
+    "confirmAnother": "Confirm"
   },
   "auth": {
     "title": "Auth",
@@ -109,7 +116,8 @@
     "balance": "Total balance",
     "check": "Account",
     "investment": "Invested",
-    "freeMoney": "Free funds"
+    "freeMoney": "Free funds",
+    "operations": "Operations"
   },
   "deposit": {
     "title": "Top up balance",
@@ -118,6 +126,41 @@
   "withdraw": {
     "title": "Withdrawal",
     "description": "Withdrawal of funds to the specified wallet takes up to 5 working days"
+  },
+  "partners": {
+    "title": "Affiliate program",
+    "description": "Remuneration for attracted partners who have active lockups is accrued from the 15th to the 20th of the current month, for the previous one",
+    "descriptionMore": "Rewards are automatically transferred to your wallet account",
+    "descriptionEnd": "S-WALLET.",
+    "allPaid": "Total paid",
+    "lastMonth": "Last month",
+    "invitePartners": "Partners invited",
+    "mainCol": "Month / Partner",
+    "reward": "Reward"
+  },
+  "history": {
+    "title": "History",
+    "description": "Displaying important events in your Opes personal account",
+    "events": "Events",
+    "categoryEvents": "Categories events"
+  },
+  "investments": {
+    "title": "Investments",
+    "description": "Open an investment lockup with a yield of 40% of the profit on your investment per month",
+    "newLockup": "New lockup",
+    "openDescription": "Open an investment lockup with a yield of 40% of the profit from your investments per month.",
+    "typeLockup": "Type lockup",
+    "halalDescription": "Trading does not use leverage and does not involve speculative (short) operations - cryptocurrency trading is an absolutely halal business according to Islam.",
+    "addHalal": "Replenishment of existing lockups is available.",
+    "halalMark": "The profitability received over the past month is added to the lockup amount. After the lockup is completed, the lockup amount is automatically transferred to your wallet account",
+    "standardMark": "The profit received for the last month is automatically transferred to your wallet account",
+    "opportunity": "A unique feature of OPES - you can change the type of interest payment for existing lockups.",
+    "createNewLockup": "Create new lockup"
+  },
+  "status": {
+    "wait": "Waiting",
+    "success": "Success",
+    "cancel": "Canceled"
   },
   "successForm": {
     "success": "Success",

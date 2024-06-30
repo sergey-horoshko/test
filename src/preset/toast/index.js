@@ -2,7 +2,7 @@ export default {
   root: ({ props }) => ({
     class: [
       //Size and Shape
-      'w-96 rounded-md',
+      'max-w-96 w-full rounded-md',
 
       // Positioning
       { '-translate-x-2/4': props.position == 'top-center' || props.position == 'bottom-center' },

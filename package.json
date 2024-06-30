@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "lint:style": "stylelint src/**/*.{css,scss,vue} --fix",
-    "prettier": "prettier . --write",
+    "format": "prettier . --write",
     "prepare": "husky"
   },
   "husky": {

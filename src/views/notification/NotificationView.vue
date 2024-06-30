@@ -17,7 +17,7 @@
           {{ data.title }}
         </span>
       </div>
-      <div class="mt-1">
+      <div class="mt-3 leading-4">
         {{ data.description }}
       </div>
       <div class="mt-5 flex gap-3">
@@ -26,7 +26,7 @@
           {{ $t('notification.date') }}
         </span>
         <span>
-          {{ dayjs(data.date).format('DD.MM') }}
+          {{ dayjs(data.date).format('DD MMM') }}
         </span>
       </div>
       <div class="mt-8 text-xs">

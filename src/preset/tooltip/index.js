@@ -1,9 +1,11 @@
 export default {
   root: ({ context }) => ({
     class: [
+      // Size
+      'max-w-[240px]',
       // Position and Shadows
       'absolute',
-      'shadow-md',
+      // 'shadow-md',
       'p-fadein',
       // Spacing
       {
@@ -18,7 +20,6 @@ export default {
   arrow: ({ context }) => ({
     class: [
       // Position
-
       'absolute',
 
       // Size
@@ -52,7 +53,8 @@ export default {
       'p-3',
       'bg-surface-700',
       'text-white',
-      'leading-none',
+      'text-xs',
+      'leading-4',
       'rounded-md',
       'whitespace-pre-line',
       'break-words',

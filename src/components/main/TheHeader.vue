@@ -41,7 +41,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 :deep(.router-link-exact-active) {
   i {
-    color: rgb(var(--blue-400));
+    color: #1a66ff;
   }
 }
 </style>

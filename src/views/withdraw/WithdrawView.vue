@@ -11,7 +11,7 @@
         {{ $t('withdraw.title') }}
       </span>
     </div>
-    <div class="mt-1 leading-5">
+    <div class="mt-2 leading-5">
       {{ $t('withdraw.description') }}
     </div>
 
@@ -26,7 +26,7 @@
         </IconField>
       </div>
 
-      <div class="flex flex-col mt-6">
+      <div class="mt-6 flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.sumWithdraw') }}
         </label>
@@ -42,7 +42,7 @@
         </IconField>
       </div>
 
-      <div class="flex flex-col mt-6">
+      <div class="mt-6 flex flex-col">
         <label class="mb-1 text-xs font-medium text-gray-500 dark:text-gray-300">
           {{ $t('form.walletRecipient') }}
         </label>

@@ -5,7 +5,7 @@
         {{ $t('settings.title') }}
       </span>
     </div>
-    <div class="mt-1">
+    <div class="mt-2 leading-5">
       {{ $t('settings.description') }}
     </div>
 
@@ -34,7 +34,7 @@ import { defineComponent, defineAsyncComponent, ref, reactive, onMounted } from 
 
 export default defineComponent({
   setup() {
-    const currentComponent = ref('TheWalletsComponent');
+    const currentComponent = ref('TheAccountComponent');
     const tabs = reactive([
       {
         id: 1,

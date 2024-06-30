@@ -11,6 +11,7 @@ import AnimatedCounter from 'vue-animated-counter';
 import DropZone from 'dropzone-vue';
 import { useLocaleStore } from '@/stores/locale.js';
 import { createBottomSheet } from 'bottom-sheet-vue3';
+import Tooltip from 'primevue/tooltip';
 import Preset from './preset';
 import ru from './locales/ru.json';
 import en from './locales/en.json';
@@ -63,4 +64,5 @@ app.use(
 app.use(router);
 app.use(DropZone);
 app.component('AnimatedCounter', AnimatedCounter);
+app.directive('tooltip', Tooltip);
 app.mount('#app');

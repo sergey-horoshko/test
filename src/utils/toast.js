@@ -1,6 +1,7 @@
 import { app } from '@/main';
 
 const lifeTime = 3000;
+
 export function showToast(severity, { title = 'Заголовок', body = 'Тело' }) {
   app.config.globalProperties.$toast.add({
     severity,

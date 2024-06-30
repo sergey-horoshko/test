@@ -3,15 +3,19 @@
     <component :is="Component" />
   </router-view>
 
-  <Toast />
+  <Toast :position="appStore.width <= 500 ? 'top-center' : 'top-right'" />
 </template>
 
 <script>
 import { onMounted, defineComponent, onDeactivated } from 'vue';
 import { useThemeStore } from '@/stores/theme.js';
+import { useAppStore } from '@/stores/app.js';
 
 export default defineComponent({
   setup() {
+    // data
+    const appStore = useAppStore();
+
     // methods
     const handleLoad = () => {
       const spinner = document.getElementById('spinner');
@@ -20,7 +24,7 @@ export default defineComponent({
     };
 
     const handleWindowResize = () => {
-      // appStore.setWidth(window.innerWidth);
+      appStore.setWidth(window.innerWidth);
     };
 
     // hooks
@@ -35,6 +39,10 @@ export default defineComponent({
     onDeactivated(() => {
       window.removeEventListener('resize', handleWindowResize);
     });
+
+    return {
+      appStore,
+    };
   },
 });
 </script>

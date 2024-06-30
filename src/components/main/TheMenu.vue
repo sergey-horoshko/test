@@ -68,6 +68,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+:deep(.router-link-exact-active) {
+  i,
+  span {
+    color: #1a66ff;
+  }
+}
+
 .link {
   min-width: 84px;
 }
